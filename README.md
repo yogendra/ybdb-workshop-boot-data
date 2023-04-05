@@ -121,3 +121,6 @@ To test with an externally running self/hosted YugabyteDB instance:
 ```sh
 gradle -Dspring.profiles.active=tysql test 
 ```
+
+## Getting Started with Gitpod:
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/srinivasa-vasu/ybdb-boot-data)

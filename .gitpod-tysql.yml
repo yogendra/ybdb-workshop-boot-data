@@ -1,4 +1,4 @@
-image: gitpod/workspace-yugabytedb
+image: gitpod/workspace-yugabytedb-preview
 
 tasks:
   - name: 1a-ybdb
@@ -15,6 +15,7 @@ tasks:
   - name: 1b-ysqlsh
     command: |
       gp ports await 5433
+      sleep 5
       ysqlsh
   - name: 2a-install-jvm
     init: |
@@ -25,7 +26,7 @@ tasks:
       SPRING_PROFILES_ACTIVE: tysql
     init: |
       gp sync-await jvm-17
-      gradle assemble
+      gradle assemble -x test
     command: |
       gp ports await 5433
       gradle test

@@ -34,7 +34,8 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.flywaydb:flyway-core")
     implementation("org.springframework.retry:spring-retry")
-    implementation("com.yugabyte:jdbc-yugabytedb:42.3.5-yb-1")
+    implementation("com.yugabyte:jdbc-yugabytedb:42.3.5-yb-2")
+    implementation("org.postgresql:postgresql:42.6.0")
 
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
     annotationProcessor("org.projectlombok:lombok")

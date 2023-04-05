@@ -34,9 +34,9 @@ jobs:
       uses: gradle/gradle-build-action@v2
       with:
         gradle-version: current
-    - name: test-boot
-      run: |
-        gradle -Dspring.profiles.active=tcysql test
     - name: build-boot
       run: |
         gradle build -x test
+    - name: test-boot
+      run: |
+        gradle -Dspring.profiles.active=tcysql test
