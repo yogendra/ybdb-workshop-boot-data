@@ -1,4 +1,4 @@
-[![SpringBoot CI with Gradle](https://github.com/srinivasa-vasu/yb-boot-data/actions/workflows/gradle-boot.yml/badge.svg?branch=devx)](https://github.com/srinivasa-vasu/yb-boot-data/actions/workflows/gradle-boot.yml)
+[![SpringBoot CI with Gradle](https://github.com/srinivasa-vasu/ybdb-boot-data/actions/workflows/gradle-boot.yml/badge.svg)](https://github.com/srinivasa-vasu/ybdb-boot-data/actions/workflows/gradle-boot.yml)
 
 [Spring Boot](https://spring.io/projects/spring-boot) makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run".
 
