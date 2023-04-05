@@ -22,8 +22,6 @@ tasks:
       echo y | sdk install java 17.0.6-librca || true
       gp sync-done jvm-17
   - name: 2b-spring-boot
-    env:
-      SPRING_PROFILES_ACTIVE: tysql
     init: |
       gp sync-await jvm-17
       gradle assemble -x test

@@ -19,7 +19,8 @@ This project depends on the following libraries.
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.flywaydb:flyway-core")
     implementation("org.springframework.retry:spring-retry")
-    implementation("com.yugabyte:jdbc-yugabytedb:42.3.5-yb-1")
+    implementation("com.yugabyte:jdbc-yugabytedb:42.3.5-yb-2")
+    implementation("org.postgresql:postgresql:42.6.0")
     
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
     annotationProcessor("org.projectlombok:lombok")
@@ -34,7 +35,7 @@ Update the driver dependency library **("com.yugabyte:jdbc-yugabytedb")** to the
 
 ## Driver Configuration
 
-Refer to the file `yb-ms-data/springboot/src/main/resources/application.yaml` in the project directory:
+Refer to the file `ybdb-boot-data/src/main/resources/application.yaml` in the project directory:
 
 ```yml
 spring:
@@ -69,7 +70,7 @@ It includes two spring profiles
 
 ### application-tcysql.yaml
 
-```
+```yml
 spring:
   datasource:
     url: jdbc:tc:yugabyte:2.16.0.0-b90:///yugabyte
@@ -80,7 +81,7 @@ Update yugabytedb version **jdbc:tc:yugabyte:2.16.0.0-b90:///yugabyte** accordin
 
 ### application-tysql.yaml
 
-```
+```yml
 spring:
   flyway:
     clean-disabled: false

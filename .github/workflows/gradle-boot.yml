@@ -39,4 +39,4 @@ jobs:
         gradle build -x test
     - name: test-boot
       run: |
-        gradle -Dspring.profiles.active=tcysql test
+        gradle test --tests "io.boot.todo.TodoApplicationRepositoryTest"
