@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: yb-boot-data
+  flyway:
+    default-schema: todo
+    schemas: todo,public
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        connection:
+          provider_disables_autocommit: true
+        default_schema: todo
+        hbm2ddl:
+          extra_physical_table_types: "PARTITIONED TABLE"
+          auto: validate
+  datasource:
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 20
+      auto-commit: false
+      keepalive-time: 120000
+server:
+  port: 8080
