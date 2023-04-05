@@ -2,7 +2,7 @@
 
 [Spring Boot](https://spring.io/projects/spring-boot) makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run".
 
-This describes how to build a simple JPA based web application using Spring Boot framework for YSQL API using [Yugabyte JDBC Driver](https://docs.yugabyte.com/latest/integrations/jdbc-driver/).
+This describes how to build a simple JPA based web application using Spring Boot framework for YSQL API using [Yugabyte JDBC Driver](https://docs.yugabyte.com/stable/integrations/jdbc-driver/).
 
 ## Getting Started with Gitpod:
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/srinivasa-vasu/ybdb-boot-data)
