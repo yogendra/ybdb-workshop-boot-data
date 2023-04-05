@@ -9,7 +9,7 @@ This describes how to build a simple JPA based web application using Spring Boot
 
 ## Prerequisites
 
-- Follow [YB Quick start](https://docs.yugabyte.com/latest/quick-start/) instructions to run a local YugabyteDB cluster. Test YugabyteDB's YSQL API, as [documented](../../quick-start/explore/ysql/) so that you can confirm that you have YSQL service running on `localhost:5433`.
+- Follow [YB Quick start](https://docs.yugabyte.com/stable/quick-start/) instructions to run a local YugabyteDB cluster. Test YugabyteDB's YSQL API, as [documented](https://docs.yugabyte.com/stable/quick-start/#check-the-cluster-status) so that you can confirm that you have YSQL service running on `localhost:5433`.
 - You will need JDK 17 or later. You can use [SDKMAN](https://sdkman.io/install) to install the JDK runtime.
 
 ## Dependencies
