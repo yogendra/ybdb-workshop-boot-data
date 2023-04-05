@@ -4,6 +4,9 @@
 
 This describes how to build a simple JPA based web application using Spring Boot framework for YSQL API using [Yugabyte JDBC Driver](https://docs.yugabyte.com/latest/integrations/jdbc-driver/).
 
+## Getting Started with Gitpod:
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/srinivasa-vasu/ybdb-boot-data)
+
 ## Prerequisites
 
 - Follow [YB Quick start](https://docs.yugabyte.com/latest/quick-start/) instructions to run a local YugabyteDB cluster. Test YugabyteDB's YSQL API, as [documented](../../quick-start/explore/ysql/) so that you can confirm that you have YSQL service running on `localhost:5433`.
@@ -114,14 +117,11 @@ gradle build
 To test with Testcontainers:
 
 ```sh
-gradle -Dspring.profiles.active=tcysql test 
+gradle test --tests "io.boot.todo.TodoApplicationRepositoryTest" 
 ```
 
 To test with an externally running self/hosted YugabyteDB instance:
 
 ```sh
-gradle -Dspring.profiles.active=tysql test 
+gradle test --tests "io.boot.todo.TodoApplicationRepositoryYSQLTest" 
 ```
-
-## Getting Started with Gitpod:
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/srinivasa-vasu/ybdb-boot-data)
