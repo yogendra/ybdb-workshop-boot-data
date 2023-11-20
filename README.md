@@ -76,11 +76,11 @@ It includes two spring profiles
 ```yml
 spring:
   datasource:
-    url: jdbc:tc:yugabyte:2.16.2.0-b41:///yugabyte
+    url: jdbc:tc:yugabyte:2.19.0.0-b190:///yugabyte
     username: yugabyte
     password: yugabyte
 ```
-Update yugabytedb version **jdbc:tc:yugabyte:2.16.2.0-b41:///yugabyte** accordingly.
+Update yugabytedb version **jdbc:tc:yugabyte:2.19.0.0-b190:///yugabyte** accordingly.
 
 ### application-tysql.yaml
 
